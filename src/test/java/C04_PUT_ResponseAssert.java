@@ -46,10 +46,4 @@ https://jsonplaceholder.typicode.com/posts/70 url'ine asagidaki Json formatindak
 
 
     }
-    git init
-    git add .
-    git commit -m "first commit"
-    git branch -M main
-    git remote add origin https://github.com/ertugrulkececii/API_automation.git
-    git push -u origin main
 }
