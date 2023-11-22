@@ -1,3 +1,5 @@
+package dailyLessons;
+
 import org.json.JSONObject;
 import org.junit.Test;
 

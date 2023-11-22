@@ -36,20 +36,20 @@ public class C13_Get_ExpectedDataOlusturma {
         expectedData.put("userId",3);
         expectedData.put("id",22);
         expectedData.put("title","dolor sint quo a velit explicabo quia nam");
-        expectedData.put("body","eos qui et ipsum ipsam suscipit autsed omnis non odioexpedita ear um mollitia molestiae aut atque rem suscipitnam impedit esse");
+        expectedData.put("body","eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse");
 
         //3- request gonder ve donen response'i kaydet
 
         Response response=given().when().get(url);
 
         //4-Assertion
-/*
+
         response
                 .then()
                 .assertThat()
                 .body("userId", Matchers.equalTo(3),
         "id",Matchers.equalTo(22), "title",Matchers.equalTo("dolor sint quo a velit explicabo quia nam"));
-*/
+response.prettyPrint();
 
         JsonPath responseJsonPath=response.jsonPath();
 
