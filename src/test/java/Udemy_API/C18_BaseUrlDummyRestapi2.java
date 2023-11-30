@@ -16,7 +16,7 @@ public class C18_BaseUrlDummyRestapi2 extends BaseUrlDummyApi {
 
         Response response=given()
                 .when().spec(specJsonPlaceHolder)
-                .delete("/{pp1},{pp2}");
+                .delete("{pp1}/ {pp2}");
 
         // Assertion
 
